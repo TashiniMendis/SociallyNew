@@ -1,0 +1,354 @@
+body{
+  background: bg-light;
+  padding: 0 10px;
+}
+/*h1{
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    width: 415px;
+    /*height: 45px;
+    left: 180px;
+    top: 42px;
+}*/
+.wrapper{
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+  position: relative;
+/*width: 776px;
+height: 850px;
+left: 420px;
+top: 87px;*/
+}
+
+.wrapper .title{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #000;
+  text-align:left;
+}
+
+.wrapper .form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper .form .col-lg-3{
+  margin-bottom: 20px;
+  align-items: center;
+  display:contents;
+}
+
+.wrapper .form .col-lg-3 label{
+   width: 200px;
+   color: #304A68;
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.wrapper .form .col-lg-6{
+    margin-bottom: 15px;
+    display:flexbox;
+    align-items: center;
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+  }
+  
+  .wrapper .form .col-lg-6 label{
+    width: 200px;
+    color: #304A68;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 40px;
+  }
+
+  .rs-picker-default .rs-picker-toggle {
+    position: relative;
+    z-index: 5;
+    padding-right: 67px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    color: #575757;
+    border: 1px solid #e5e5ea;
+    padding-left: 44px;
+}
+
+  label{
+    width: 100%;
+    color: #304A68;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+  }
+  .wrapper .form .group{
+    white-space: nowrap;
+  width: 100%;
+  padding-right: 5px;
+
+   vertical-align: middle;
+  }
+  .checkbox {
+    vertical-align: top;
+    display:inline-block
+  }
+  .wrapper .form .group label{
+    
+    /*vertical-align: middle;
+    justify-content:left;
+    align-items: center;
+    word-wrap: break-word;*/
+    white-space: normal;
+    display:inline-block;
+  }
+   .textarea{
+    width: 1000%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  
+  font-size: 16px;
+    resize: none;
+    
+    
+  }
+
+.wrapper .form .col-lg-3 .input,
+.wrapper .form .col-lg-6 .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .col-lg-3 .input:focus,
+.wrapper .form .col-lg-6 .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #3580f1;
+}
+.date{
+  color: #304A68;
+  
+}
+#right-panel-link {
+  position: absolute;
+  top: 93%;
+  right: 5%;
+}
+.main2 ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+  position: relative;
+}
+.main2 ul li{
+  display: inline-block;
+}
+.main2 ul li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  /*font-weight: bold;*/
+  background-color: #1763F4;
+  color: #fff;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .btn-s{
+  padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #1763F4;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  
+  position: absolute;
+  right: 5%;
+  bottom: 1%;
+  
+}
+
+.wrapper .form .inputfield .btn{
+  padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #1763F4;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  
+  position:relative;
+  
+  
+}
+.wrapper .form .inputfield .btn:hover{
+  background: #1763F4;
+}
+
+.wrapper .form .inputfield .btn-s:hover{
+  background: #1763F4;
+}
+
+
+
+.wrapper .form .col-lg-3:last-child,
+.wrapper .form .col-lg-6:last-child{
+  margin-bottom: 0;
+}
+
+.wrapper .form .drag-area{
+  border: 3px dashed #d5dbd9;
+  position: relative;
+  width: 650px;
+  height: 116.11px;
+  /*left: 4%;
+  top: 50%;*/
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f2f2f2;
+  
+}
+.wrapper .form .drag-area.active{
+  border: 2px solid #d5dbd9;
+}
+.wrapper .form .drag-area .icon{
+  font-size: 14px;
+  color: #939292;
+}
+.wrapper .form .drag-area header{
+  font-size: 12px;
+  font-weight: 500;
+  color: #939292;
+}
+.wrapper .form .drag-area span{
+  font-size: 12px;
+  font-weight: 500;
+  color: #939292;
+  margin: 10px 0 15px 0;
+}
+.wrapper .form .drag-area button{
+  padding: 10px 25px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #1763F4;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wrapper .form .drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.wrapper .form .table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+.wrapper .form .table-container .table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead tr th{
+    font-size: 12px;
+    font-weight: medium;
+    letter-spacing: 0.35px;
+    color: #304A68;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #C3C4CB;
+}
+
+.table tbody tr td{
+  font-size: 12px;
+  letter-spacing: 00.35px;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #C3C4CB;
+
+
+}
+.img-box input{
+  padding: 6px;
+}
+
+img{
+    width: 20px;
+    height: 24px; 
+    padding: 5px; 
+}
+
+button{
+  size: 50%;
+  background-color: #fff;
+  color: #575757;
+}
+
+.Ddr{
+  font-family: sans-serif;
+  text-align: center;
+  display:flexbox;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.mt-3 mb-3{
+  text-decoration: none;
+  margin-top: 1rem!important;
+
+}
+
+/*************************************/
+
+@media (max-width:420px) {
+  .wrapper .form .col-lg-3, 
+  .wrapper .form .col-lg-6{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .col-lg-3 label,
+  .wrapper .form .col-lg-6 label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .col-lg-3.terms,
+  .wrapper .form .col-lg-6.terms{
+    flex-direction: row;
+  }
+}
